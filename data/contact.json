@@ -1,0 +1,19 @@
+[
+    {
+        "name":"John wick",
+        "email":"john@gmail.com"
+      },
+       {
+        "name":"Marry Alice",
+        "email":" Marry@gmail.com"
+      }, {
+        "name":"Sachat le chat",
+        "email":"lechat@gmail.com"
+      }, {
+        "name":" Alice",
+        "email":" Alice@gmail.com"
+      }, {
+        "name":"le chat",
+        "email":"lechat@gmail.com"
+      }
+  ]

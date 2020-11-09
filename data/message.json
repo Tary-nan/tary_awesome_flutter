@@ -1,0 +1,28 @@
+[
+    {
+        "title":"introduction",
+        "body":"bonjour et bienvenu dans cette nouvelle serie de video sur flutter"
+      },
+       {
+        "title":"lancer ma premiere application ",
+        "body":" bonjour et bienvenu dans cette nouvelle serie de video , aujourd' hui on fera notres premiere app flutter"
+      }, {
+        "title": "comprendre stateless et stateful",
+        "body":"bonjour et bienvenu dans cette nouvelle serie de video nous saurons la difference entre StateLess et Stateful"
+      }, {
+        "title": "affichez les donner avec ListView",
+        "body":" bonjour et bienvenu dans cette nouvelle serie de video nous utiliserons les ListView"
+      }, {
+        "title":"Acceder au assets",
+        "body":"Accessing assets in flutter"
+      }, {
+        "title": "comprendre stateless et stateful",
+        "body":"bonjour et bienvenu dans cette nouvelle serie de video nous saurons la difference entre StateLess et Stateful"
+      }, {
+        "title": "affichez les donner avec ListView",
+        "body":" bonjour et bienvenu dans cette nouvelle serie de video nous utiliserons les ListView"
+      }, {
+        "title":"Acceder au assets",
+        "body":"Accessing assets in flutter"
+      }
+]

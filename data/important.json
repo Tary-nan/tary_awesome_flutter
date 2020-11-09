@@ -1,0 +1,13 @@
+[
+    {
+        "title":"Important 1",
+        "body":"bonjour et bienvenu dans cette nouvelle serie de video sur flutter"
+      },
+       {
+        "title":"Important 1",
+        "body":" bonjour et bienvenu dans cette nouvelle serie de video , aujourd' hui on fera notres premiere app flutter"
+      }, {
+        "title":"Important 1",
+        "body":"bonjour et bienvenu dans cette nouvelle serie de video nous saurons la difference entre StateLess et Stateful"
+      }
+]
