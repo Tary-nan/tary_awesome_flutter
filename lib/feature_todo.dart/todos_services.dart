@@ -1,9 +1,8 @@
 import 'package:sprinkle/Service.dart';
 import 'package:stash_dio/stash_dio.dart';
-import 'package:tary_awesome_flutter/feature_todo.dart/todosd_model.dart';
+import 'package:tary_awesome_flutter/feature_todo.dart/todos_model.dart';
 
 import 'package:dio/dio.dart';
-
 
 final dio = Dio(BaseOptions(baseUrl: 'https://jsonplaceholder.typicode.com'))
     ..interceptors.addAll([
@@ -12,10 +11,10 @@ final dio = Dio(BaseOptions(baseUrl: 'https://jsonplaceholder.typicode.com'))
           requestHeader: false,
           requestBody: false,
           responseHeader: false,
-          responseBody: false)
-    ]);
+          responseBody: false)]);
 
 class TodosService extends Service<Todos> {
+
   @override
   Future<List<Todos>> browse({String filter})async {
     Iterable<Todos> _data;

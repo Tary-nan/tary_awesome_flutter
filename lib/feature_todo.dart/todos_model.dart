@@ -1,3 +1,7 @@
+// main.dart
+import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:flutter/foundation.dart';
+
 class Todos {
     Todos({
         this.userId,

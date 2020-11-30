@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sprinkle/Observer.dart';
 import 'package:sprinkle/WebResourceManager.dart';
-import 'package:tary_awesome_flutter/feature_todo.dart/todosd_model.dart';
+import 'package:tary_awesome_flutter/feature_todo.dart/todos_model.dart';
 import 'package:sprinkle/SprinkleExtension.dart';
 
 

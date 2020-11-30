@@ -1,22 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:sprinkle/Observer.dart';
 import 'package:sprinkle/Supervisor.dart';
 import 'package:sprinkle/WebResourceManager.dart';
 import 'package:sprinkle/sprinkle.dart';
-import 'package:tary_awesome_flutter/bootcamp/interface1_screen.dart';
-import 'package:tary_awesome_flutter/bootcamp/musique.dart';
 import 'package:tary_awesome_flutter/feature_contact/contact_manager.dart';
 import 'package:tary_awesome_flutter/feature_counter/counter_manager.dart';
 import 'package:tary_awesome_flutter/feature_todo.dart/todos_services.dart';
-import 'package:tary_awesome_flutter/feature_todo.dart/todosd_model.dart';
-import 'package:tary_awesome_flutter/screens/input_screen.dart';
-import 'package:tary_awesome_flutter/widgets/app_bar.dart';
-
+import 'package:tary_awesome_flutter/feature_todo.dart/todos_model.dart';
 
 
 final supervisor = Supervisor()
   .register<WebResourceManager<Todos>>(() => WebResourceManager<Todos>(TodosService()))
   .register<ContactManager>(() => ContactManager())
   .register<CounterManager>(() => CounterManager());
+  
   
 void main()=> runApp(Sprinkle(child: MyApp(), supervisor: supervisor));
 
@@ -30,7 +27,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MusicBoot(),
+      home: HomeScreen(),
       debugShowCheckedModeBanner: false,
     );
   }
@@ -44,7 +41,15 @@ class HomeScreen extends StatelessWidget {
     manager.inFilter.add("");
     
     return Scaffold(
-      body: Center(child: Text('hello world')),
+      body: Observer(
+        stream: manager.collection$,
+        builder: (context, List<Todos> data)=> ListView.builder(
+          itemBuilder: (context, index)=> ListTile(
+            title: Text(data[index].title)
+          ),
+          itemCount: data.length,
+          ),
+      )
     );
   }
 }
